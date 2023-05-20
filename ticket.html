@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Get Tickets</title>
+  <style>
+    body {
+      font-family: Serif;
+      background-color: #050505;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      max-width: 400px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+    
+    label {
+      display: block;
+      margin-top: 10px;
+      color: #000;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    
+    .payment-methods {
+      margin-top: 20px;
+    }
+    
+    .payment-methods label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    a {
+      display: inline-block;
+      background-color: #98a5d9;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+    
+    .footer {
+      text-align: center;
+      margin-top: 20px;
+      color: #fff;
+    }
+    
+    .footer a {
+      color: #666;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Get tickets for K-PopNation '23</h2>
+    <form>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+      
+	<label for="ticket-type">How many tickets you'd like to purchase?</label>
+      <select id="ticket-type" name="ticket-type" style="display: inline-block; background-color: #ccc; color: #5a5a5a; text-decoration: none; padding: 10px 20px; font-family: Serif; font-size: 16px; border-radius: 5px; margin-top: 20px;">
+        <option value="ticket1">1</option>
+        <option value="ticket2">2</option>
+        <option value="ticket3">3</option>
+        <option value="ticket4">4</option>
+        <option value="ticket5">5</option>
+        <option value="ticket6">6</option>
+	</select>
+
+      <label for="ticket-type">Type of Ticket:</label>
+      <select id="ticket-type" name="ticket-type" style="display: inline-block; background-color: #ccc; color: #5a5a5a; text-decoration: none; padding: 10px 20px; font-family: Serif; font-size: 16px; border-radius: 5px; margin-top: 20px;">
+        <option value="ga">General Admission ($145.00 ea)</option>
+        <option value="vip">VIP ($375.00 ea)</option>
+      </select>
+		<label for="ticket-type">Ticket purchased for:</label>
+      <select id="ticket-type" name="ticket-type" style="display: inline-block; background-color: #ccc; color: #5a5a5a; text-decoration: none; padding: 10px 20px; font-family: Serif; font-size: 16px; border-radius: 5px; margin-top: 20px;">
+        <option value="day1">Day 1</option>
+        <option value="day2">Day 2</option>
+        <option value="day3">Day 3</option>
+        <option value="day12">Days 1 & 2</option>
+        <option value="day13">Days 1 & 3</option>
+        <option value="day23">Days 2 & 3</option>
+		 <option value="all">All Days</option>
+	</select>
+      <div class="payment-methods">
+        <label for="payment-method">Payment Method:</label>
+        <select id="payment-method" name="payment-method" style="display: inline-block; background-color: #ccc; color: #5a5a5a; text-decoration: none; padding: 10px 20px; font-family: Serif; font-size: 16px; border-radius: 5px; margin-top: 20px;">
+          <option value="credit-card">Credit Card</option>
+          <option value="debit-card">Debit Card</option>
+        </select>
+        
+        <label for="card-name">Cardholder Name:</label>
+        <input type="text" id="card-name" name="card-name">
+        
+        <label for="card-number">Card Number:</label>
+        <input type="text" id="card-number" name="card-number">
+        
+        <label for="expiry-month">Expiry Month and Year: [mm/yyyy]</label>
+        <input type="text" id="expiry-mmyyyy" name="expiry-mmyyyy">
+        
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" name="cvv">
+        
+        <label for="zip-code">Zip Code:</label>
+        <input type="text" id="zip-code" name="zip-code">
+      </div>
+      
+      <div class="buttons">
+        <center><a href="accesspass.html">Get Tickets</a></center>
+      </div>
+      <center><a href="main.html" style="background-color: #fff; color: #5a5a5a">Cancel</a></center>
+	</div><br />
+    </form>
+    
+    <div class="footer">
+      <p style=“font-size: 15.5px”>Need help? Contact us or visit mygoldenticket.com/welp</p>
+    </div>
+  </div>
+</body>
+</html>

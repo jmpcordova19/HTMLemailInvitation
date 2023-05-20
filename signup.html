@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign in to Account</title>
+  <style>
+    body {
+      font-family: Serif;
+      background-color: #050505;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 400px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      color: #000;
+    }
+    input[type="text"],
+    input[type="email"],
+	 input[type="password"],
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 10px;
+    }
+    a {
+      display: inline-block;
+      background-color: #98a5d9;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 20px;
+		color: #fff
+    }
+    .footer a {
+      color: #666;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Member Login</h2>
+	<p>Sign in to speed up the checkout process and save payments to your account.</p><br />
+    <form>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+   <div class="buttons">
+        <center><a href="ticket.html">Login</a>
+      </div><br /><br /></center>
+	<h2>New to this? Become a member now!</h2>
+	<p>Sign up to stay in the loop with personalized notifications. Receive updates on topics that matter to you, be the first to know about relevant events or promotions.</p><br />
+		 <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <label for="password">Create Password:</label>
+        <input type="password" id="password" name="password">
+     <div class="buttons">
+        <center><a href="ticket.html">Sign up</a></center>
+      </div>
+      <center><a href="main.html" style="background-color: #fff; color: #5a5a5a">Back</a></center>
+	</div><br />
+    </form>
+    <div class="footer">
+      <p style="font-size: 15.5px">Need help? Contact us or visit mygoldenticket.com/welp</p>
+    </div>
+  </div>
+</body>
+</html>
